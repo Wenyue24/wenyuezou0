@@ -63,11 +63,10 @@
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>About Me</heading>
-              <p>I am a first-year PhD student in the <a href="https://www.csail.mit.edu/">Computer Science 
-                and Artificial Intelligence Laboratory</a> (CSAIL) at MIT.
+              <p>I am a PhD student at the <a href="https://www.csail.mit.edu/">Computer Science & Artificial Intelligence Laboratory</a> (CSAIL) at MIT.
                 I am part of the <a href="https://www.csail.mit.edu/research/distributed-robotics-laboratory">
                 Distributed Robotics Group</a>, where I research how to design and build soft-bodied and bio-inspired robots 
-                under the supervision of <a href="http://danielarus.csail.mit.edu/">Prof. Daniela Rus</a>.
+                under the supervision of <a href="https://danielarus.csail.mit.edu/">Prof. Daniela Rus</a>.
                 <br>
                 We leverage programmable robotic materials, novel computational methods, and machine learning to bridge the gap between simulation and reality in soft robotics, 
                 enabling robots to adapt to a changing environment while interacting safely with humans.
@@ -101,13 +100,48 @@
 
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           
+          <tr onmouseout="bones_stop()" onmouseover="bones_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='bones_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/bones.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/bones.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function bones_start() {
+                  document.getElementById('bones_image').style.opacity = "1";
+                }
+
+                function bones_stop() {
+                  document.getElementById('bones_image').style.opacity = "0";
+                }
+                bones_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="data/pdf/bones.pdf">
+                <papertitle>Simulation and Fabrication of Soft Robots with Embedded Skeletons</papertitle>
+              </a>
+              <br>
+              <a href="https://jamesmbern.com/">James Bern</a>, <a href="https://ir.linkedin.com/in/fatemeh-zargarbashi">Fatemeh Zargarbashi</a>, <strong>Annan Zhang</strong>, <a href="https://people.epfl.ch/josie.hughes/?lang=en">Josie Hughes</a>, <a href="https://danielarus.csail.mit.edu/">Daniela Rus</a>
+              <br>
+                Accepted at <em>2022 IEEE International Conference on Robotics and Automation (ICRA)</em>
+              <br>
+              <a href="data/pdf/bones.pdf">preprint</a>
+              <p>
+                We present a pipeline to simulate and fabricate cable-driven hybrid soft-rigid robots with embedded skeletons. These robots combine the best of both worlds and simultaneously provide robustness and strength.</p>
+            </td>
+          </tr>
+
           <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <a href="images/misesFCNN.png"><img src="images/misesFCNN.png" style="width:100%"></a>
+              <a href="images/mises_fcnn.png"><img src="images/mises_fcnn.png" style="width:100%"></a>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://doi.org/10.1016/j.ijplas.2020.102732">
-                <papertitle>Using neural networks to represent von Mises plasticity with isotropic hardening</papertitle>
+                <papertitle>Using Neural Networks to Represent von Mises Plasticity with Isotropic Hardening</papertitle>
               </a>
               <br>
               <strong>Annan Zhang</strong>, <a href="https://mohr.ethz.ch/">Dirk Mohr</a>
@@ -115,14 +149,12 @@
               <em>International Journal of Plasticity</em>, 132, 2020
               <br>
               <a href="https://doi.org/10.1016/j.ijplas.2020.102732">paper</a> &nbsp/&nbsp
-              <a href="https://raw.githubusercontent.com/annan-zhang/annan-zhang.github.io/main/data/bib/zhang2020using.bib">bibtex</a>
+              <!-- <a href="https://raw.githubusercontent.com/annan-zhang/annan-zhang.github.io/main/data/bib/zhang2020using.bib">bibtex</a> -->
+              <a href="data/bib/zhang2020using.bib">bibtex</a>
               <p>
                 We demonstrate how a plasticity model widely used for ductile engineering materials 
                 can be learned by a neural network. We deploy the neural network in commercial finite 
                 element software and show its capability to correctly predict stresses from strains.</p>
-              <p>
-                Approached by engineers who implement our idea in industry.
-              </p>
             </td>
           </tr>
 
@@ -187,7 +219,7 @@
           <tr>
             <td style="padding:20px;width:100%;vertical-align:middle">
               <p style="text-align:left; width:49%; display:inline-block; font-size: x-small;">
-                Last updated: March 2021
+                Last updated: February 2022
               </p>
               <p style="text-align:right; width:50%; display:inline-block; font-size: x-small;">
                 <a style="font-size: x-small;" href="https://github.com/jonbarron/jonbarron_website">
